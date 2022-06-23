@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+</head>
+<link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.bubble.css">
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <button onclick='choose()'>click to add elements</button>
+        <p id='add' onclick='choose()'>+</p>
+        <div id="dialog">
+    
+            <div onclick="text()">
+            <img src='images.png' class='img2' >
+              <b>TEXT<b>
+            </div>
+            <hr>
+            <div onclick="img()">
+            <img src='girl.jpg' class='img2' >
+              <b>IMAGE<b>
+            </div>
+        </div>
+        <div id="text">
+            <div id="editor">
+            <p>Hello World!</p>
+            <p>Some initial <strong>bold</strong> text</p>
+            <p><br></p>
+            </div>
+            <input type='submit' onclick="abc()">
+        </div> 
+        <div id="img">
+        <div>
+            
+            <label for="inputTag">
+               Select photo <br/>
+             <img src="upload.png" class='margin'>
+             <input id="inputTag" type="file" name="uploaded_file" />
+             <br/>
+             <span id="imageName"></span>
+            </label>
+            
+        </div>
+        </div>
+    </div>
+    <div id="outer">
+    </div>
+    
+    
+</body>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="script.js"></script>
+    
